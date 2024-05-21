@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+header {
+    background-color: #000;
+    padding: 1em 0;
+    text-align: center;
+    border-bottom: 2px solid red;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#search-container {
+    display: flex;
+    align-items: center;
+}
+
+#search-container input {
+    padding: 0.5em;
+    margin-right: 0.5em;
+}
+
+main {
+    padding: 2em;
+}
+
+#recommendations h1 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.filters label {
+    margin-right: 1em;
+    align-self: center;
+}
+
+.filters select, .filters input {
+    margin-right: 2em;
+    padding: 0.5em;
+}
+
+.recommendations-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+    justify-items: center;
+}
+
+.recommendation {
+    background-color: #222;
+    padding: 1em;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.recommendation img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+ 
+}
+
+footer p a {
+    color: white;
+    text-decoration: none;
+}
