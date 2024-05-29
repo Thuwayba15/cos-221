@@ -1,77 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+
 body {
     font-family: "Cormorant Garamond", serif;
     font-size: 18px;
     margin: 0;
     padding: 0;
     background-image: url("bg2.png");
-    /* background-color: #121212; */
     color: #fffccf;
 }
 
 
 main {
     flex: 1;
-    display: flex;
-    justify-content: center;
+
     align-items: center;
-    height: calc(100vh - 160px); /* Adjust height to accommodate header and footer */
+    padding: 20px;
+
+    min-height: calc(100vh - 150px); /* Adjust the value according to your footer's height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 
-#login-section {
+#delete-section {
+    background-color: #0d004b;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
     text-align: center;
     width: 100%;
-    max-width: 500px;
-    padding: 50px;
-    background-color: #0b013b;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border: 1px solid gold;
 }
 
-.center-heading {
-    font-size: 3em;
+.search-container {
     margin-bottom: 20px;
+    text-align: center;
 }
 
-#login-form .form-group {
-    margin-bottom: 15px;
-    text-align: left;
-    
+#search-results {
+    margin-top: 10px;
+    text-align: center;
 }
 
-#login-form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-#login-form input {
-    width: 100%;
+#search-results div {
     padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #0d004b;
-    color: #fffccf;
-    font-size: 1em;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    cursor: pointer;
 }
 
-#login-form button {
-    font-family: "Cormorant Garamond", serif;
+#search-results div:hover {
+    background-color: #f0f0f0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    border-radius: 15px;
     background-color: #0b013b;
     color: #fffccf;
-    padding: 10px 20px;
-    font-size: 1.2em;
+    /* transition: background-color 0.3s ease; */
     cursor: pointer;
-    border-radius: 15px;
-    margin-top: 10px;
     border: 1px solid gold;
 }
 
-#login-form button:hover {
+button:hover {
     color: #f8ffc2; /* Neon color */
-    text-shadow: 0 0 5px #f8ffc2, 0 0 10px #f8ffc2, 0 0 20px #f8ffc2, 0 0 40px #f8ffc2, 0 0 80px #f8ffc2;
-    animation: neonGlow 1.5s infinite alternate;
+            text-shadow: 0 0 5px #f8ffc2, 0 0 10px #f8ffc2, 0 0 20px #f8ffc2, 0 0 40px #f8ffc2, 0 0 80px #f8ffc2;
+            animation: neonGlow 1.5s infinite alternate;
 }
 
 @keyframes neonGlow {
@@ -81,6 +82,15 @@ main {
     to {
         text-shadow: 0 0 10px #f8ffc2, 0 0 20px #f8ffc2, 0 0 30px #f8ffc2, 0 0 50px #f8ffc2, 0 0 100px #f8ffc2;
     }
+}
+
+
+#delete-container {
+    margin-top: 20px;
+}
+
+#item-details {
+    margin-bottom: 15px;
 }
 
 .cormorant-garamond-light {

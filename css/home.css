@@ -55,18 +55,6 @@ body {
     text-decoration: underline;
 }
 
-.like-button {
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: #fffccf;
-}
-
-.like-button.filled {
-    color: #ff0000;
-}
-
 .filters {
     display: flex;
     justify-content: center;
@@ -198,6 +186,18 @@ body {
     margin-top: 10px;
     border: 1px solid gold;
    
+}
+
+.like-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fffccf;
+}
+
+.like-button.filled {
+    color: #ff0000;
 }
 
 

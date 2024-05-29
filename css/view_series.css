@@ -1,42 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 18px;
     margin: 0;
     padding: 0;
-    background-color: #121212;
-    color: #fff;
+    background-image: url("bg2.png");
+    color: #fffccf;
 }
 
-header {
-    background-color: #000;
-    padding: 1em 0;
-    text-align: center;
-    border-bottom: 2px solid red;
-}
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* #search-container {
-    display: flex;
-    align-items: center;
-}
-
-#search-container input {
-    padding: 0.5em;
-    margin-right: 0.5em;
-} */
 
 main {
     padding: 2em;
@@ -84,6 +58,7 @@ main {
 
 .user-reviews {
     margin-top: 2em;
+    
 }
 
 .user-reviews h2 {
@@ -91,26 +66,58 @@ main {
 }
 
 .review {
-    background-color: #222;
+    background-color: #0d004b;
     padding: 1em;
-    border-radius: 8px;
+    border-radius: 15px;
     margin-bottom: 1em;
+    border: 1px solid gold;
 }
 
 .review p {
     margin: 0.5em 0;
 }
 
-footer {
-    text-align: center;
-    padding: 1em;
-    background-color: #333;
-    position:relative;
-    width: 100%;
-    bottom: 0;
+
+
+.add-review-button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin-bottom: 1em;
+    background-color: #0d004b;
+    color: #fffccf;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+    border: 1px solid gold;
 }
 
-footer p a {
-    color: white;
-    text-decoration: none;
+.add-review-button:hover {
+    color: #f8ffc2; /* Neon color */
+    text-shadow: 0 0 5px #f8ffc2, 0 0 10px #f8ffc2, 0 0 20px #f8ffc2, 0 0 40px #f8ffc2, 0 0 80px #f8ffc2;
+    animation: neonGlow 1.5s infinite alternate;
+}
+
+
+@keyframes neonGlow {
+    from {
+        text-shadow: 0 0 5px #f8ffc2, 0 0 10px #f8ffc2, 0 0 20px #f8ffc2, 0 0 40px #f8ffc2, 0 0 80px #f8ffc2;
+    }
+    to {
+        text-shadow: 0 0 10px #f8ffc2, 0 0 20px #f8ffc2, 0 0 30px #f8ffc2, 0 0 50px #f8ffc2, 0 0 100px #f8ffc2;
+    }
+}
+
+
+.cormorant-garamond-light {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.cormorant-garamond-regular {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
 }

@@ -55,18 +55,6 @@ body {
     text-decoration: underline;
 }
 
-.like-button {
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: #fffccf;
-}
-
-.like-button.filled {
-    color: #ff0000;
-}
-
 .filters {
     display: flex;
     justify-content: center;
@@ -150,7 +138,6 @@ body {
 .button {
 
     padding: 5px 10px;
-    border: none;
     border-radius: 5px;
     cursor: pointer;
     background-color: #0b013b;
@@ -158,11 +145,10 @@ body {
     border: 1px solid gold;
 }
 
-.watchlist-button {
+.remove-button {
     font-family: "Cormorant Garamond", serif;
     background-color: #0d004b;
     color: #fffccf;
-    border: none;
     padding: 5px 10px;
     font-size: 15px;
     cursor: pointer;
@@ -176,7 +162,6 @@ body {
     font-family: "Cormorant Garamond", serif;
     background-color: #0d004b;
     color: #fffccf;
-    border: none;
     padding: 5px 10px;
     font-size: 15px;
     cursor: pointer;
@@ -190,7 +175,6 @@ body {
     font-family: "Cormorant Garamond", serif;
     background-color: #0d004b;
     color: #fffccf;
-    border: none;
     padding: 5px 10px;
     font-size: 15px;
     cursor: pointer;
@@ -215,7 +199,7 @@ color: #f8ffc2; /* Neon color */
     
 }
 
-.watchlist-button:hover{
+.remove-button:hover{
         color: #f8ffc2; /* Neon color */
             text-shadow: 0 0 5px #f8ffc2, 0 0 10px #f8ffc2, 0 0 20px #f8ffc2, 0 0 40px #f8ffc2, 0 0 80px #f8ffc2;
             animation: neonGlow 1.5s infinite alternate;

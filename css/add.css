@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+
 body {
     font-family: "Cormorant Garamond", serif;
     font-size: 18px;
     margin: 0;
     padding: 0;
     background-image: url("bg2.png");
-    /* background-color: #121212; */
     color: #fffccf;
 }
 
@@ -16,63 +16,59 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 160px); /* Adjust height to accommodate header and footer */
+    padding: 20px;
 }
 
-#login-section {
+#add-section {
+    background-color: #0d004b;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
     text-align: center;
     width: 100%;
-    max-width: 500px;
-    padding: 50px;
-    background-color: #0b013b;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border: 1px solid gold;
 }
 
-.center-heading {
-    font-size: 3em;
-    margin-bottom: 20px;
-}
-
-#login-form .form-group {
+.form-group {
     margin-bottom: 15px;
     text-align: left;
     
 }
 
-#login-form label {
+.form-group label {
     display: block;
     margin-bottom: 5px;
 }
 
-#login-form input {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #0d004b;
-    color: #fffccf;
-    font-size: 1em;
+.form-group input,
+.form-group select {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid #fffccf;
+    border-radius: 4px;
 }
 
-#login-form button {
-    font-family: "Cormorant Garamond", serif;
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 15px;
     background-color: #0b013b;
     color: #fffccf;
-    padding: 10px 20px;
-    font-size: 1.2em;
+    /* transition: background-color 0.3s ease; */
     cursor: pointer;
-    border-radius: 15px;
-    margin-top: 10px;
     border: 1px solid gold;
 }
 
-#login-form button:hover {
+button:hover {
     color: #f8ffc2; /* Neon color */
     text-shadow: 0 0 5px #f8ffc2, 0 0 10px #f8ffc2, 0 0 20px #f8ffc2, 0 0 40px #f8ffc2, 0 0 80px #f8ffc2;
     animation: neonGlow 1.5s infinite alternate;
 }
+
 
 @keyframes neonGlow {
     from {
@@ -82,6 +78,7 @@ main {
         text-shadow: 0 0 10px #f8ffc2, 0 0 20px #f8ffc2, 0 0 30px #f8ffc2, 0 0 50px #f8ffc2, 0 0 100px #f8ffc2;
     }
 }
+
 
 .cormorant-garamond-light {
     font-family: "Cormorant Garamond", serif;
@@ -96,3 +93,4 @@ main {
     font-style: normal;
     font-size: 20px;
 }
+
