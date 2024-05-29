@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 29, 2024 at 08:00 PM
+-- Generation Time: May 29, 2024 at 11:34 PM
 -- Server version: 10.3.39-MariaDB-0+deb10u2
 -- PHP Version: 7.3.31-1~deb10u6
 
@@ -58,7 +58,9 @@ INSERT INTO `BANK_ACCOUNT` (`accountID`, `userID`, `accountNumber`, `bankName`) 
 (17, 17, '4628462517', 'Marvel Bank'),
 (18, 18, '1234567890', 'FNB'),
 (19, 19, '25874136989', 'Capitec'),
-(32, 20, '46372732515', 'Sith Bank');
+(32, 20, '46372732515', 'Sith Bank'),
+(35, 21, '1246172139', 'Magic Bank'),
+(36, 22, '123547861', 'Smiths BAnk');
 
 -- --------------------------------------------------------
 
@@ -17633,7 +17635,7 @@ CREATE TABLE `USERS` (
   `subscription_plan` set('family','individual','student') NOT NULL,
   `api_key` varchar(100) NOT NULL,
   `salt` varchar(100) NOT NULL,
-  `admin` tinyint(1) NOT NULL
+  `admin` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -17659,8 +17661,10 @@ INSERT INTO `USERS` (`userID`, `username`, `name`, `surname`, `email`, `password
 (16, 'blackpanther', 'TChalla', 'Ndaku', 'tchalla@wakanda.com', '$argon2i$v=19$m=65536,t=4,p=1$bzZQV2U5TXNpbWN3ZzRRdw$gAHUiM2Zfumr9pyLIAj4cRMJHHroee70duJyQ7H/uLg', '1980-11-28', 'Wakanda', 'individual', '99488799f5b7e0df5ec92897397326ce46b3f13f', '-7190205207981972031665646ac005033.90615493', 0),
 (17, 'captainmarvel', 'Carol', 'Danvers', 'cdanvers@marvels.com', '$argon2i$v=19$m=65536,t=4,p=1$WXQ2Y0VKMjFLcFJHZElRZw$6ceEHf9LKrENA7j3AD2xGvuIdTyK7LwEFyN/GLiqvC8', '1968-04-24', 'United States of America', 'family', '58062177163f5472e22aa4cfa5f13758ffe6ce4f', '2407260135383769066564763c57e30.49462233', 0),
 (18, 'tishreddy', 'Tishana', 'Reddy', 'tishana@gmail.com', '$argon2i$v=19$m=65536,t=4,p=1$ZkMuenYxZnlHSzc5UEtrOQ$0hTOE+C15E1S8Hd9mZEeRDKCs2+NbZP19EtyOyX5P5g', '2024-02-10', 'South Africa', 'family', 'da820e7d1a44548a513d657bf0d96eddb0f9dd51', '-168234085575386120766574c00a7bc44.08645435', 0),
-(19, 'layla3030', 'Layla', 'Peter', 'layla3030@gmail.com', '$argon2i$v=19$m=65536,t=4,p=1$V3BCLm0yOS80WXBwWUdsMQ$uMjyLq7sMHe4cG0/UwvZCsTj1k+5JYsUyvJYwxDjmko', '2001-01-01', 'Portugal', 'individual', '6dc264c8f2a05b4a0e2e19eae162597bb13b11c0', '-5119859458475018194665751a1605504.10953262', 0),
-(20, 'darthvader', 'Anakin', 'Skywalker', 'anakinskywalker@darkside.com', '$argon2i$v=19$m=65536,t=4,p=1$SVFmS3h2Y09QbVU1b3I1Rg$8AjH8MpW4ctYdMbr03gc3doKnWdSAn+trY7fAia1EJw', '1981-04-19', 'Canada', 'individual', '3e96e9c950faf44c8d112035f007104ab41e1c49', '5245431080923429118665762c145c1b7.92125774', 0);
+(19, 'layla3030', 'Layla', 'Peter', 'layla3030@gmail.com', '$argon2i$v=19$m=65536,t=4,p=1$V3BCLm0yOS80WXBwWUdsMQ$uMjyLq7sMHe4cG0/UwvZCsTj1k+5JYsUyvJYwxDjmko', '2001-01-01', 'Portugal', 'individual', '6dc264c8f2a05b4a0e2e19eae162597bb13b11c0', '-5119859458475018194665751a1605504.10953262', 1),
+(20, 'darthvader', 'Anakin', 'Skywalker', 'anakinskywalker@darkside.com', '$argon2i$v=19$m=65536,t=4,p=1$SVFmS3h2Y09QbVU1b3I1Rg$8AjH8MpW4ctYdMbr03gc3doKnWdSAn+trY7fAia1EJw', '1981-04-19', 'Canada', 'individual', '3e96e9c950faf44c8d112035f007104ab41e1c49', '5245431080923429118665762c145c1b7.92125774', 0),
+(21, 'emrys', 'Merlin', 'Emrys', 'merlin@camelot.co.uk', '$argon2i$v=19$m=65536,t=4,p=1$YTRSSnBkaC43WlJENi9UWA$jTcQym4NBWbHRsmOkewCNy+yGEyb52T4d6o08Sro4rA', '1997-04-15', 'United Kingdom', 'student', 'b0ac96955d97d7ab2e16ee2a9bc39de57d79c5d5', '372230745923050002466577e746af922.10698018', 0),
+(22, 'lays230', 'Sacoor', 'Test', 'test123@gmail.com', '$argon2i$v=19$m=65536,t=4,p=1$c3VlSzcuWm5sTTVselE4ZA$PUnyW5rB+zyrR1KjXhwg/cuNg7LoezfUugsyXs446os', '2008-06-10', 'Spain', 'individual', 'fa2f171bcd40858bfba88e91ae5332a889f59142', '-40786337908325198586657814f8ada74.72372314', 0);
 
 -- --------------------------------------------------------
 
@@ -26829,8 +26833,7 @@ INSERT INTO `WORKS_ON` (`crewID`, `contentID`) VALUES
 -- Indexes for table `BANK_ACCOUNT`
 --
 ALTER TABLE `BANK_ACCOUNT`
-  ADD PRIMARY KEY (`accountID`),
-  ADD KEY `user_fk1` (`userID`);
+  ADD PRIMARY KEY (`accountID`);
 
 --
 -- Indexes for table `CONTENT`
@@ -26900,7 +26903,7 @@ ALTER TABLE `WORKS_ON`
 -- AUTO_INCREMENT for table `BANK_ACCOUNT`
 --
 ALTER TABLE `BANK_ACCOUNT`
-  MODIFY `accountID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `accountID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- AUTO_INCREMENT for table `CONTENT`
@@ -26924,7 +26927,7 @@ ALTER TABLE `REVIEW`
 -- AUTO_INCREMENT for table `USERS`
 --
 ALTER TABLE `USERS`
-  MODIFY `userID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `userID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- Constraints for dumped tables
