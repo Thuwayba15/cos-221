@@ -1,239 +1,91 @@
 https://wheatley.cs.up.ac.za/u21554995/COS221/221api.php
 
-{
-    "type": "registerUser",
-    "name": "Tony",
-    "surname": "Stark",
-    "email": "tonystark@starkindustries.com",
-    "password": "!ronManR0X",
-    "username": "ironman",
-    "dateOfBirth": "1970-05-29",
-    "country": "United States of America",
-    "subscription_plan": "individual",
-    "accountNumber": "124528495"
-}
 
-
-{
-    "type": "registerUser",
-    "name": "Sherlock",
-    "surname": "Holmes",
-    "email": "sholmes@elementary.co.uk",
-    "password": "@Deducti0n",
-    "username": "sherlockholmes",
-    "dateOfBirth": "1980-01-06",
-    "country": "England",
-    "subscription_plan": "individual",
-    "accountNumber": "03648201928"
-}
+"email": "tonystark@starkindustries.com"
+"password": "!ronManR0X"
 
 
 
-{
-    "type": "registerUser",
-    "name": "Emily",
-    "surname": "Prentiss",
-    "email": "eprentiss@bau.com",
-    "password": "B!ackB1rd",
-    "username": "eprentiss",
-    "dateOfBirth": "1970-10-12",
-    "country": "United States of America",
-    "subscription_plan": "individual",
-    "accountNumber": "0428471873"
-}
+"email": "sholmes@elementary.co.uk"
+"password": "@Deducti0n"
 
 
-{
-    "type": "registerUser",
-    "name": "ObiWan",
-    "surname": "Kenobi",
-    "email": "obiwankenobi@jedis.com",
-    "password": "My0nlyH0pe!!",
-    "username": "obiwankenobi",
-    "dateOfBirth": "1971-03-31",
-    "country": "United Kingdom",
-    "subscription_plan": "family",
-    "accountNumber": "07349279328"
-}
+
+"email": "eprentiss@bau.com"
+"password": "B!ackB1rd"
 
 
-{
-    "type": "registerUser",
-    "name": "Aaron",
-    "surname": "Hotchner",
-    "email": "ahotchner@bau.com",
-    "password": "Jack&BAU10",
-    "username": "hotchner",
-    "dateOfBirth": "1965-11-02",
-    "country": "United States of America",
-    "subscription_plan": "family",
-    "accountNumber": "2638472827"
-}
+
+"email": "obiwankenobi@jedis.com"
+"password": "My0nlyH0pe!!"
 
 
-{
-    "type": "registerUser",
-    "name": "Derek",
-    "surname": "Morgan",
-    "email": "dmorgan@bau.com",
-    "password": "Savannah&BAU10",
-    "username": "morgan",
-    "dateOfBirth": "1973-06-06",
-    "country": "United States of America",
-    "subscription_plan": "individual",
-    "accountNumber": "1827461836"
-}
+
+"email": "ahotchner@bau.com"
+"password": "Jack&BAU10"
 
 
-{
-    "type": "registerUser",
-    "name": "Jennifer",
-    "surname": "Jareau",
-    "email": "jjareau@bau.com",
-    "password": "Henry&BAU10",
-    "username": "jareau",
-    "dateOfBirth": "1978-11-22",
-    "country": "United States of America",
-    "subscription_plan": "family",
-    "accountNumber": "483726192"
-}
+
+"email": "dmorgan@bau.com"
+"password": "Savannah&BAU10"
 
 
-{
-    "type": "registerUser",
-    "name": "Spencer",
-    "surname": "Reid",
-    "email": "sreid@bau.com",
-    "password": "Books&BAU10",
-    "username": "reid",
-    "dateOfBirth": "1981-10-12",
-    "country": "United States of America",
-    "subscription_plan": "student",
-    "accountNumber": "918273645"
-}
+
+"email": "jjareau@bau.com"
+"password": "Henry&BAU10"
 
 
-{
-    "type": "registerUser",
-    "name": "Penelope",
-    "surname": "Garcia",
-    "email": "pgarcia@bau.com",
-    "password": "Tech&BAU10",
-    "username": "garcia",
-    "dateOfBirth": "1977-04-08",
-    "country": "United States of America",
-    "subscription_plan": "individual",
-    "accountNumber": "5674839201"
-}
 
-{
-    "type": "registerUser",
-    "name": "John",
-    "surname": "Watson",
-    "email": "jwatson@elementary.co.uk",
-    "password": "@H3aling123",
-    "username": "johnwatson",
-    "dateOfBirth": "1982-03-15",
-    "country": "England",
-    "subscription_plan": "family",
-    "accountNumber": "4738291048"
-}
+"email": "sreid@bau.com"
+"password": "Books&BAU10"
 
 
-{
-    "type": "registerUser",
-    "name": "Hercule",
-    "surname": "Poirot",
-    "email": "hpoirot@belgiumdetective.be",
-    "password": "@Littl3Gr33nCells",
-    "username": "herculepoirot",
-    "dateOfBirth": "1876-04-01",
-    "country": "Belgium",
-    "subscription_plan": "individual",
-    "accountNumber": "849302716"
-}
+
+"email": "pgarcia@bau.com"
+"password": "Tech&BAU10"
 
 
-{
-    "type": "registerUser",
-    "name": "Kogoro",
-    "surname": "Mouri",
-    "email": "kmouri@tokyodetective.jp",
-    "password": "@SleepingD3t3ctiv3",
-    "username": "kogoromouri",
-    "dateOfBirth": "1963-10-10",
-    "country": "Japan",
-    "subscription_plan": "individual",
-    "accountNumber": "103928475"
-}
+
+"email": "jwatson@elementary.co.uk"
+"password": "@H3aling123"
 
 
-{
-    "type": "registerUser",
-    "name": "Miss",
-    "surname": "Marple",
-    "email": "mmarple@st.marymead.uk",
-    "password": "@Knitting123",
-    "username": "missmarple",
-    "dateOfBirth": "1890-12-02",
-    "country": "England",
-    "subscription_plan": "student",
-    "accountNumber": "736281049"
-}
+
+"email": "hpoirot@belgiumdetective.be"
+"password": "@Littl3Gr33nCells"
 
 
-{
-    "type": "registerUser",
-    "name": "Natasha",
-    "surname": "Romanoff",
-    "email": "nromanoff@shield.com",
-    "password": "Bl@ckW1dow!",
-    "username": "blackwidow",
-    "dateOfBirth": "1984-11-22",
-    "country": "Russia",
-    "subscription_plan": "individual",
-    "accountNumber": "104857364"
-}
+
+"email": "kmouri@tokyodetective.jp"
+"password": "@SleepingD3t3ctiv3"
 
 
-{
-    "type": "registerUser",
-    "name": "Thor",
-    "surname": "Odinson",
-    "email": "thorodinson@asgard.com",
-    "password": "Mj0ln1r!",
-    "username": "thor",
-    "dateOfBirth": "1965-01-01",
-    "country": "Asgard",
-    "subscription_plan": "family",
-    "accountNumber": "9182736450"
-}
+
+"email": "mmarple@st.marymead.uk"
+"password": "@Knitting123"
 
 
-{
-    "type": "registerUser",
-    "name": "TChalla",
-    "surname": "Ndaku",
-    "email": "tchalla@wakanda.com",
-    "password": "Bl@ckP@nther123",
-    "username": "blackpanther",
-    "dateOfBirth": "1980-11-28",
-    "country": "Wakanda",
-    "subscription_plan": "individual",
-    "accountNumber": "836471029"
-}
+
+"email": "nromanoff@shield.com"
+"password": "Bl@ckW1dow!"
 
 
-{
-    "type": "registerUser",
-    "name": "Carol",
-    "surname": "Danvers",
-    "email": "cdanvers@marvels.com",
-    "password": "Rambeau$123",
-    "username": "captainmarvel",
-    "dateOfBirth": "1968-04-24",
-    "country": "United States of America",
-    "subscription_plan": "family",
-    "accountNumber": "4628462517"
-}
+
+"email": "thorodinson@asgard.com"
+"password": "Mj0ln1r!"
+
+
+
+"email": "tchalla@wakanda.com"
+"password": "Bl@ckP@nther123"
+
+
+
+"email": "cdanvers@marvels.com"
+"password": "Rambeau$123"
+
+
+
+"email": "anakinskywalker@darkside.com"
+"password": "P@dmeAmida1a"
 
