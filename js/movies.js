@@ -1,25 +1,4 @@
-// // script.js
-// document.addEventListener('DOMContentLoaded', () => {
-//     const searchLink = document.getElementById('search-link');
-//     const searchContainer = document.getElementById('search-container');
 
-//     searchLink.addEventListener('click', (event) => {
-//         event.preventDefault();
-//         searchContainer.classList.toggle('hidden');
-//     });
-
-//     const searchButton = document.getElementById('search-button');
-//     searchButton.addEventListener('click', () => {
-//         const query = document.getElementById('search-input').value;
-//         performSearch(query);
-//     });
-// });
-
-// function performSearch(query) {
-//     // This function will perform the search using the API.
-//     // For now, it will just log the search query to the console.
-//     console.log('Searching for:', query);
-// }
 
 document.addEventListener('DOMContentLoaded', () => {
     const viewMoreButtons = document.querySelectorAll('.view-more-button');
@@ -31,6 +10,57 @@ document.addEventListener('DOMContentLoaded', () => {
             // For simplicity, we'll use localStorage
             localStorage.setItem('selectedMovieId', movieId);
             window.location.href = 'view_movie.php';
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const watchlistButtons = document.querySelectorAll('.watchlist-button');
+
+    watchlistButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            if (!this.classList.contains('added')) {
+                this.textContent = 'Added to Watchlist';
+                this.classList.add('added');
+            }
+        });
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const shareButtons = document.querySelectorAll('.share-button');
+
+    shareButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const shareWindow = window.open('', '', 'width=400,height=300');
+            shareWindow.document.write(`
+                <html>
+                    <head>
+                        <title>Share: </title>
+                        <style>
+                            body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+                            img { width: 300px; height: 100px; }
+                        </style>
+                    </head>
+                    <body>
+                        <h1>Share: </h1>
+                        <img src="img/icons.jpg" alt="Share Icons">
+                    </body>
+                </html>
+            `);
+            shareWindow.document.close();
+        });
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const likeButtons = document.querySelectorAll('.like-button');
+    
+    likeButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            this.classList.toggle('filled');
         });
     });
 });

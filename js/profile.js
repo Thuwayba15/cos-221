@@ -37,3 +37,28 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = 'index.php';
     });
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Simulated data fetching
+    const profileData = {
+        username: 'johndoe',
+        email: 'johndoe@example.com',
+        subscription: 'Premium',
+        accountType: 'admin' // This should be 'admin' or 'user'
+    };
+
+    // Populate profile fields with data
+    document.getElementById('username').value = profileData.username;
+    document.getElementById('email').value = profileData.email;
+    document.getElementById('subscription').value = profileData.subscription;
+    document.getElementById('account-type').value = profileData.accountType.charAt(0).toUpperCase() + profileData.accountType.slice(1); // Capitalize first letter
+
+    // Logout button functionality
+    document.getElementById('logout-button').addEventListener('click', function() {
+        // Implement logout functionality
+        alert('Logged out');
+        // Redirect to login page or perform other logout actions
+    });
+});
