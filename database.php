@@ -60,7 +60,7 @@ class databaseAPI{
     }
 
     public function addMovie($conn, $input){
-        $sql = "INSERT INTO CONTENT (title, language, genre, releaseDate, rating, productionStudio, image, summary, runtime) VALUES ('".$input["title"]."', '".$input["language"]."', '".$input["genre"]."', '".$input["releaseDate"]."', '".$input["rating"]."', '".$input["productionStudio"]."', '".$input["image"]."', '".$input["summary"]."', '".$input["runtime"]."')";
+        $sql = "INSERT IGNORE INTO CONTENT (title, language, genre, releaseDate, rating, productionStudio, image, summary, runtime) VALUES ('".$input["title"]."', '".$input["language"]."', '".$input["genre"]."', '".$input["releaseDate"]."', '".$input["rating"]."', '".$input["productionStudio"]."', '".$input["image"]."', '".$input["summary"]."', '".$input["runtime"]."')";
         if ($conn->query($sql) === TRUE) {
             echo "New record created successfully  <br>";
         } else {
