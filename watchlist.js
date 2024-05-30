@@ -37,6 +37,22 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+document.addEventListener('DOMContentLoaded', () => {
+    const viewMoreButtons = document.querySelectorAll('.view-more-button');
+
+    viewMoreButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const movieId = button.getAttribute('data-movie-id');
+            // Here you would typically store the movieId in a way the movie details page can access it
+            // For simplicity, we'll use localStorage
+            localStorage.setItem('selectedMovieId', movieId);
+            window.location.href = 'view_movie.php';
+        });
+    });
+});
+
+
 function getMovieDetailsById(id) {
     // Placeholder function to get movie details by ID
     // Replace this with your actual implementation
@@ -50,3 +66,33 @@ function getMovieDetailsById(id) {
     };
     return movieDatabase[id];
 }
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const shareButtons = document.querySelectorAll('.share-button');
+
+    shareButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const shareWindow = window.open('', '', 'width=400,height=300');
+            shareWindow.document.write(`
+                <html>
+                    <head>
+                        <title>Share: </title>
+                        <style>
+                            body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+                            img { width: 300px; height: 100px; }
+                        </style>
+                    </head>
+                    <body>
+                        <h1>Share: </h1>
+                        <img src="img/icons.jpg" alt="Share Icons">
+                    </body>
+                </html>
+            `);
+            shareWindow.document.close();
+        });
+    });
+});
+
+
