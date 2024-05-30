@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const viewMoreButtons = document.querySelectorAll('.view-more-button');
 
@@ -13,6 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
     const watchlistButtons = document.querySelectorAll('.watchlist-button');
@@ -54,8 +54,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
-=======
 document.addEventListener('DOMContentLoaded', function() {
     const likeButtons = document.querySelectorAll('.like-button');
     
@@ -66,3 +64,46 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// document.addEventListener('DOMContentLoaded', function() {
+//     const likeButtons = document.querySelectorAll('.like-button');
+//     const likedMoviesContainer = document.querySelector('.liked-movies-container');
+
+//     likeButtons.forEach(button => {
+//         button.addEventListener('click', function() {
+//             this.classList.toggle('filled');
+//             const movie = this.closest('.movie');
+//             const movieId = this.getAttribute('data-movie-id');
+            
+//             if (this.classList.contains('filled')) {
+//                 addToLiked(movie, movieId);
+//             } else {
+//                 removeFromLiked(movieId);
+//             }
+//         });
+//     });
+
+//     function addToLiked(movie, movieId) {
+//         const likedMovie = movie.cloneNode(true);
+//         likedMovie.querySelector('.like-button').classList.add('filled');
+//         likedMovie.querySelector('.like-button').setAttribute('data-movie-id', movieId);
+//         likedMoviesContainer.appendChild(likedMovie);
+//     }
+
+//     function removeFromLiked(movieId) {
+//         const likedMovie = likedMoviesContainer.querySelector(`.like-button[data-movie-id="${movieId}"]`).closest('.movie');
+//         likedMoviesContainer.removeChild(likedMovie);
+//     }
+
+//     // Tab navigation
+//     const tabs = document.querySelectorAll('nav ul li a');
+//     tabs.forEach(tab => {
+//         tab.addEventListener('click', function(event) {
+//             event.preventDefault();
+//             const target = this.getAttribute('href').substring(1);
+//             document.querySelectorAll('main > section').forEach(section => {
+//                 section.style.display = 'none';
+//             });
+//             document.getElementById(target).style.display = 'block';
+//         });
+//     });
+// });

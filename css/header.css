@@ -1,0 +1,99 @@
+
+header {
+    text-align: center;
+    padding: 1em;
+    background-color: #0b013b;
+    border-bottom: 2px solid gold;
+    position:relative;
+    width: 100%;
+    bottom: 0;
+    font-size: 18px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+    vertical-align: middle;
+}
+
+header nav ul li a {
+    color: #fffccf;
+    text-decoration: none;
+    transition: color 0.3s, text-shadow 0.3s; /* Add transition for smooth color and shadow change */
+}
+
+header nav ul li a:hover {
+    color: #f8ffc2; /* Neon color */
+    text-shadow: 0 0 5px #f8ffc2, 0 0 10px #f8ffc2, 0 0 20px #f8ffc2, 0 0 40px #f8ffc2, 0 0 80px #f8ffc2;
+    animation: neonGlow 1.5s infinite alternate;
+}
+
+header nav ul li img.nav-logo {
+    height: 50px; /* Adjust the height as needed */
+    /* margin-right: auto; Pushes the logo to the left */
+    margin-right: auto;
+}
+
+
+header nav ul li img.spin {
+    width: 40px;
+    margin-right: auto;
+    
+}
+
+header nav ul li img.spin:hover{
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    
+}
+
+  
+  @keyframes rotate {
+    0% { transform: rotate(0turn); }
+    100% { transform: rotate(6turn); }
+  }
+  
+  @-webkit-keyframes rotate {
+    0% { transform: rotate(0turn); }
+    100% { transform: rotate(6turn); }
+  }
+
+
+@keyframes neonGlow {
+    from {
+        text-shadow: 0 0 5px #f8ffc2, 0 0 10px #f8ffc2, 0 0 20px #f8ffc2, 0 0 40px #f8ffc2, 0 0 80px #f8ffc2;
+    }
+    to {
+        text-shadow: 0 0 10px #f8ffc2, 0 0 20px #f8ffc2, 0 0 30px #f8ffc2, 0 0 50px #f8ffc2, 0 0 100px #f8ffc2;
+    }
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #0b013b;
+    border-top: 2px solid gold;
+    position:relative;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px;
+}
+
+footer p a {
+    color: #fffccf;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    color: #f8ffc2; /* Neon color */
+    text-shadow: 0 0 5px #f8ffc2, 0 0 10px #f8ffc2, 0 0 20px #f8ffc2, 0 0 40px #f8ffc2, 0 0 80px #f8ffc2;
+    animation: neonGlow 1.5s infinite alternate;
+}

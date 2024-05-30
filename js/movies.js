@@ -55,7 +55,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-=======
 document.addEventListener('DOMContentLoaded', function() {
     const likeButtons = document.querySelectorAll('.like-button');
     

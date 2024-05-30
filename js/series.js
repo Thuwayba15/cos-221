@@ -9,10 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
             // Here you would typically store the movieId in a way the movie details page can access it
             // For simplicity, we'll use localStorage
             localStorage.setItem('selectedMovieId', movieId);
-            window.location.href = 'view_movie.php';
+            window.location.href = 'view_series.php';
         });
     });
 });
+
 
 document.addEventListener('DOMContentLoaded', function() {
     const watchlistButtons = document.querySelectorAll('.watchlist-button');
@@ -55,7 +56,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-=======
 document.addEventListener('DOMContentLoaded', function() {
     const likeButtons = document.querySelectorAll('.like-button');
     
@@ -65,4 +65,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
