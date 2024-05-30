@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
         };
 
         const username = 'u19072211';
-        const password = 'University14';
-        const credentials = btoa(username + ':' + password);
+        const password1 = 'University14';
+        const credentials = btoa(username + ':' + password1);
 
         fetch('https://wheatley.cs.up.ac.za/u19072211/COS221/api.php', {  // Adjust this path if your API endpoint is different
             method: 'POST',
