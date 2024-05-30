@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+body {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    background-image: url("bg2.png");
+    color: #fffccf;
+}
+
+
+
+main {
+    padding: 2em;
+}
+
+#movie-view {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.movie-image {
+    position: relative;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.movie-image img {
+    width: 300px;
+    height:300px;
+    border-radius: 8px;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    color: white;
+    cursor: pointer;
+}
+
+.movie-details {
+    margin-bottom: 2em;
+}
+
+.movie-details p {
+    margin: 0.5em 0;
+}
+
+.movie-details a {
+    color: white;
+    text-decoration: none;
+}
+
+.user-reviews {
+    margin-top: 2em;
+    
+}
+
+.user-reviews h2 {
+    margin-bottom: 1em;
+}
+
+.review {
+    background-color: #0d004b;
+    padding: 1em;
+    border-radius: 15px;
+    margin-bottom: 1em;
+    border: 1px solid gold;
+}
+
+.review p {
+    margin: 0.5em 0;
+}
+
+
+
+.add-review-button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin-bottom: 1em;
+    background-color: #0d004b;
+    color: #fffccf;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+    border: 1px solid gold;
+}
+
+.add-review-button:hover {
+    color: #f8ffc2; /* Neon color */
+    text-shadow: 0 0 5px #f8ffc2, 0 0 10px #f8ffc2, 0 0 20px #f8ffc2, 0 0 40px #f8ffc2, 0 0 80px #f8ffc2;
+    animation: neonGlow 1.5s infinite alternate;
+}
+
+
+@keyframes neonGlow {
+    from {
+        text-shadow: 0 0 5px #f8ffc2, 0 0 10px #f8ffc2, 0 0 20px #f8ffc2, 0 0 40px #f8ffc2, 0 0 80px #f8ffc2;
+    }
+    to {
+        text-shadow: 0 0 10px #f8ffc2, 0 0 20px #f8ffc2, 0 0 30px #f8ffc2, 0 0 50px #f8ffc2, 0 0 100px #f8ffc2;
+    }
+}
+
+
+.cormorant-garamond-light {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.cormorant-garamond-regular {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
