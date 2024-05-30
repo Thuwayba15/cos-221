@@ -1,0 +1,91 @@
+https://wheatley.cs.up.ac.za/u21554995/COS221/221api.php
+
+
+"email": "tonystark@starkindustries.com"
+"password": "!ronManR0X"
+
+
+
+"email": "sholmes@elementary.co.uk"
+"password": "@Deducti0n"
+
+
+
+"email": "eprentiss@bau.com"
+"password": "B!ackB1rd"
+
+
+
+"email": "obiwankenobi@jedis.com"
+"password": "My0nlyH0pe!!"
+
+
+
+"email": "ahotchner@bau.com"
+"password": "Jack&BAU10"
+
+
+
+"email": "dmorgan@bau.com"
+"password": "Savannah&BAU10"
+
+
+
+"email": "jjareau@bau.com"
+"password": "Henry&BAU10"
+
+
+
+"email": "sreid@bau.com"
+"password": "Books&BAU10"
+
+
+
+"email": "pgarcia@bau.com"
+"password": "Tech&BAU10"
+
+
+
+"email": "jwatson@elementary.co.uk"
+"password": "@H3aling123"
+
+
+
+"email": "hpoirot@belgiumdetective.be"
+"password": "@Littl3Gr33nCells"
+
+
+
+"email": "kmouri@tokyodetective.jp"
+"password": "@SleepingD3t3ctiv3"
+
+
+
+"email": "mmarple@st.marymead.uk"
+"password": "@Knitting123"
+
+
+
+"email": "nromanoff@shield.com"
+"password": "Bl@ckW1dow!"
+
+
+
+"email": "thorodinson@asgard.com"
+"password": "Mj0ln1r!"
+
+
+
+"email": "tchalla@wakanda.com"
+"password": "Bl@ckP@nther123"
+
+
+
+"email": "cdanvers@marvels.com"
+"password": "Rambeau$123"
+
+
+
+"email": "anakinskywalker@darkside.com"
+"password": "P@dmeAmida1a"
+

@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    background-image: url("bg2.png");
+    /* background-color: #0d004b; */
+    color: #fffccf;
+}
+
+#recommendations {
+    display:inline;
+    justify-content: space-between;
+    align-items: left;
+    padding: 10px;
+    background-color: #0d004b;
+    margin-right: auto;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+}
+
+.movie-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.movie {
+    background-color: #0b013b;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid gold;
+
+}
+
+.movie img {
+    width: 80%;
+    height: 80%;
+    border-radius: 2px;
+}
+
+.movie img:hover {
+    transform: scale(1.1);
+  }
+
+.movie p {
+    text-decoration: underline;
+}
+
+.like-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fffccf;
+}
+
+.like-button.filled {
+    color: #ff0000;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.filters label {
+    margin-right: 1em;
+    align-self: center;
+}
+
+.filters select, .filters input {
+    margin-right: 2em;
+    padding: 0.5em;
+}
+
+
+#search-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    /* background-color: #0d004b; */
+}
+
+#search-input {
+    background-color: #fffccf;
+    color: #0d004b;
+    border: 1px solid #0d004b;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+#search-button {
+    background-color: #0b013b;
+    color: #fffccf;
+    border: 1px solid #fffccf;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    color: #f8ffc2; /* Neon color */
+    text-shadow: 0 0 5px #f8ffc2, 0 0 10px #f8ffc2, 0 0 20px #f8ffc2, 0 0 40px #f8ffc2, 0 0 80px #f8ffc2;
+    animation: neonGlow 1.5s infinite alternate;
+}
+
+
+.recommendations-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+    justify-items: center;
+}
+
+.recommendation {
+    background-color: #222;
+    padding: 1em;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.recommendation img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+#recommendations h1 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.button-container {
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.button {
+
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #0b013b;
+    color: #fffccf;
+    border: 1px solid gold;
+}
+
+.watchlist-button {
+    font-family: "Cormorant Garamond", serif;
+    background-color: #0d004b;
+    color: #fffccf;
+    border: none;
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: 10px;
+    border: 1px solid gold;
+    
+}
+
+.view-more-button {
+    font-family: "Cormorant Garamond", serif;
+    background-color: #0d004b;
+    color: #fffccf;
+    border: none;
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: 10px;
+    border: 1px solid gold;
+    
+}
+
+.share-button {
+    font-family: "Cormorant Garamond", serif;
+    background-color: #0d004b;
+    color: #fffccf;
+    border: none;
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: 10px;
+    border: 1px solid gold;
+   
+}
+
+
+.share-button:hover{
+color: #f8ffc2; /* Neon color */
+    text-shadow: 0 0 5px #f8ffc2, 0 0 10px #f8ffc2, 0 0 20px #f8ffc2, 0 0 40px #f8ffc2, 0 0 80px #f8ffc2;
+    animation: neonGlow 1.5s infinite alternate;
+
+}
+
+.view-more-button:hover{
+    color: #f8ffc2; /* Neon color */
+        text-shadow: 0 0 5px #f8ffc2, 0 0 10px #f8ffc2, 0 0 20px #f8ffc2, 0 0 40px #f8ffc2, 0 0 80px #f8ffc2;
+        animation: neonGlow 1.5s infinite alternate;
+    
+}
+
+.watchlist-button:hover{
+        color: #f8ffc2; /* Neon color */
+            text-shadow: 0 0 5px #f8ffc2, 0 0 10px #f8ffc2, 0 0 20px #f8ffc2, 0 0 40px #f8ffc2, 0 0 80px #f8ffc2;
+            animation: neonGlow 1.5s infinite alternate;
+        
+}
+        
+
+@keyframes neonGlow {
+    from {
+        text-shadow: 0 0 5px #f8ffc2, 0 0 10px #f8ffc2, 0 0 20px #f8ffc2, 0 0 40px #f8ffc2, 0 0 80px #f8ffc2;
+    }
+    to {
+        text-shadow: 0 0 10px #f8ffc2, 0 0 20px #f8ffc2, 0 0 30px #f8ffc2, 0 0 50px #f8ffc2, 0 0 100px #f8ffc2;
+    }
+}
+
+.share-box {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fffccf;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 100;
+}
+
+.share-box img {
+    width: 100px;
+    height: 100px;
+}
+
+.share-box.hidden {
+    display: none;
+}
+
+.cormorant-garamond-light {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.cormorant-garamond-regular {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
