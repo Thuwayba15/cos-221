@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    background-image: url("getty_movie_theaterjpg.jpeg");
+    /* background-color: #000;*/
+   background-size: cover;
+    color: #fffccf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-repeat: no-repeat; /* Set background repeat to none */
+    background-position: center;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 160px);
+}
+
+#welcome {
+    text-align: center;
+}
+
+.center-heading {
+    font-size: 80px;
+
+    /* animation: slideDown 2s ease-out forwards; */
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.neon-effect {
+    color: #fffccf; /* Neon color */
+    text-shadow: 0 0 5px #f8ffc2, 0 0 10px #f8ffc2, 0 0 20px #f8ffc2, 0 0 40px #f8ffc2, 0 0 80px #f8ffc2; /* Neon glow */
+    animation: neonGlow 1.5s infinite alternate; /* Animation for neon glow */
+}
+
+/* Animation for neon glow */
+@keyframes neonGlow {
+    from {
+        text-shadow: 0 0 5px #f8ffc2, 0 0 10px #f8ffc2, 0 0 20px #f8ffc2, 0 0 40px #f8ffc2, 0 0 80px #f8ffc2;
+    }
+    to {
+        text-shadow: 0 0 10px #f8ffc2, 0 0 20px #f8ffc2, 0 0 30px #f8ffc2, 0 0 50px #f8ffc2, 0 0 100px #f8ffc2;
+    }
+}
+
+.center-buttons button {
+    background-color: #0d004b;
+    color: #fffccf;
+    border: none;
+    padding: 10px 20px;
+    font-size: 2em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+
+.center-buttons button:hover {
+    color: #f8ffc2; /* Neon color */
+    text-shadow: 0 0 5px #f8ffc2, 0 0 10px #f8ffc2, 0 0 20px #f8ffc2, 0 0 40px #f8ffc2, 0 0 80px #f8ffc2;
+    animation: neonGlow 1.5s infinite alternate;
+}
+
+@keyframes neonGlow {
+    from {
+        text-shadow: 0 0 5px #f8ffc2, 0 0 10px #f8ffc2, 0 0 20px #f8ffc2, 0 0 40px #f8ffc2, 0 0 80px #f8ffc2;
+    }
+    to {
+        text-shadow: 0 0 10px #f8ffc2, 0 0 20px #f8ffc2, 0 0 30px #f8ffc2, 0 0 50px #f8ffc2, 0 0 100px #f8ffc2;
+    }
+}
+
+/* Individual animations for each letter */
+.letter {
+    display: inline-block;
+    animation-duration: 0.5s; /* Faster flickering */
+    animation-timing-function: ease-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    font-size: 100px;
+}
+
+/* Animation for flickering */
+@keyframes flicker {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+}
+
+/* Animation for standing still */
+@keyframes standStill {
+    from {
+        opacity: 0.;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply flicker animation */
+.flicker {
+    animation: flicker 0.5s infinite alternate, standStill 0.5s forwards 2s; /* Flicker for 2 seconds */
+}

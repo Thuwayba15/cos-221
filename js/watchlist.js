@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
 document.addEventListener('DOMContentLoaded', () => {
     const viewMoreButtons = document.querySelectorAll('.view-more-button');
 
@@ -52,7 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
 function getMovieDetailsById(id) {
     // Placeholder function to get movie details by ID
     // Replace this with your actual implementation
@@ -66,7 +64,6 @@ function getMovieDetailsById(id) {
     };
     return movieDatabase[id];
 }
-
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -94,5 +91,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
-
